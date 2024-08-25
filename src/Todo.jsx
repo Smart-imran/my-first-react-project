@@ -7,7 +7,7 @@
 // }
 
 
-// conditional 
+// conditional  rendering option 1
 export default function Todo({task,isDone}){
     if(isDone === true){
         return <li>
