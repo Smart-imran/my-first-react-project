@@ -12,8 +12,8 @@ function App() {
 
       <h1>Vite + React</h1>
       <Todo task= "Learn React" isDone={true} ></Todo>
-      <Todo task= "Explore Core Concept" isDone={false}></Todo>
-      <Todo task= "Try another" isDone={true}></Todo>
+      <Todo task= "Explore Core Concept++" isDone={false}></Todo>
+      <Todo task= "Try another ++" isDone={true}></Todo>
 
 
 
