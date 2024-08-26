@@ -38,11 +38,11 @@
 // conditional rendering option 3: Ternary
 
 
-export default function Todo({task,isDone}){
-    return(
-        <li> {isDone ? "Finished" : "Work on"} :{task}</li>
-    )
-}
+// export default function Todo({task,isDone}){
+//     return(
+//         <li> {isDone ? "Finished" : "Work on"} :{task}</li>
+//     )
+// }
 
 // conditional rendering option  4: &&
 
@@ -59,3 +59,26 @@ export default function Todo({task,isDone}){
 //         <li>{task} {isDone || "notDone"} </li>
 //     )
 // }
+
+
+
+// conditional rendering option 6: variable
+
+
+export default function Todo({ task, isDone }) {
+
+    let listItem;
+    if (isDone) {
+        listItem = <li>
+            Finised : {task}
+        </li>
+    }
+
+    else{
+        listItem = <li>
+            Finised not : {task}
+        </li>
+    }
+
+    return listItem;
+}
